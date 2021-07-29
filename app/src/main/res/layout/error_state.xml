@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/size_5dp"
+            android:text="Retry" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPleaseTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRetry"
+            android:layout_centerHorizontal="true"
+            android:text="Please try again" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPleaseTryAgain"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</layout>

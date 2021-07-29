@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--  <data>
+
+          <variable
+              name="data"
+              type="com.example.myapplicationwithpaging3.model.UserDataModel" />
+      </data>-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_5dp"
+        android:orientation="vertical"
+        android:padding="@dimen/size_2dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvImage"
+            android:layout_width="@dimen/size_100dp"
+            android:layout_height="@dimen/size_80dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPhoto"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_5dp"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:layout_toEndOf="@+id/cvImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFirstName"
+            android:layout_marginStart="@dimen/size_5dp"
+            android:layout_toEndOf="@+id/cvImage"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="@dimen/text_12sp"
+            tools:text="desc" />
+    </RelativeLayout>
+</layout>
