@@ -23,6 +23,7 @@ import kotlinx.coroutines.flow.collectLatest
 import javax.inject.Inject
 
 @AndroidEntryPoint
+//Demo
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     private val mainViewModel: MainViewModel by viewModels()
